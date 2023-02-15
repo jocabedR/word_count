@@ -11,9 +11,11 @@ defmodule WordCount do
     word = replace(word, "ú", "u")
 
     word = replace(word, "\n", " ")
+    word = replace(word, "/", " ")
     word = replace(word, ",", "")
     word = replace(word, ";", "")
     word = replace(word, ".", "")
+    word = replace(word, ":", "")
     word = replace(word, "¿", "")
     word = replace(word, "?", "")
     word = replace(word, "¡", "")
@@ -48,4 +50,3 @@ defmodule WordCount do
      end
   end
 end
-
